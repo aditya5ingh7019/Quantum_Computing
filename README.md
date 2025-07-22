@@ -1,33 +1,33 @@
 
 
 
-# 🔄 Complex Imbalanced Superposition — Bloch Sphere Representation
 
-Visualizes a qubit in the state:
 
-\[
-|\psi\rangle = \frac{1}{\sqrt{10}}|0\rangle + \frac{3i}{\sqrt{10}}|1\rangle
-\]
+# Quantum Circuit Simulation using Qiskit
 
-This quantum state shows both:
-- **Amplitude imbalance** (higher chance of measuring ∣1⟩)
-- **Relative phase** (imaginary coefficient → tilt in Y–Z plane)
+This project demonstrates a simple 1-qubit quantum circuit using Qiskit.
+It applies an X gate followed by a Hadamard gate and then simulates the resulting state using different backends:
+- Statevector simulator
+- BasicSimulator
+- AerSimulator
+- IBM Runtime SamplerV2
 
-##  Concepts:
-- Bloch Sphere
-- Quantum superposition
-- Complex amplitudes and phase effects
+The output shows:
+- Statevector of the qubit
+- Probability distributions
+- Measurement results
+- Histogram of outcomes
 
 ## Requirements
-- Qiskit
-- NumPy
-- Matplotlib
 
-Install with:
+- Python 3.x
+- qiskit
+- matplotlib
+- qiskit-aer
+- qiskit-ibm-runtime
+
+## How to Run
+
 ```bash
-pip install -r requirements.txt
-
-# How To Rum
-# bash
-python complex_superposition.py
-
+pip install qiskit qiskit-aer qiskit-ibm-runtime matplotlib
+python quantum_circuit_simulation.py
